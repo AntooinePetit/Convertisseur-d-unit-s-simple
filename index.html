@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convertisseur d'unités simple</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Convertisseur d'unités simple</h1>
+    <form action="#">
+      <div>
+        <label for="from">Unité de départ</label>
+        <input type="number" name="from" id="from" value="0" />
+        <select name="from-unit" id="from-unit">
+          <option value="m">Mètre</option>
+          <option value="ft">Pied</option>
+          <option value="C">Celsius</option>
+          <option value="F">Fahrenheit</option>
+          <option value="€">Euros</option>
+          <option value="$">Dollars</option>
+          <option value="£">Livres</option>
+        </select>
+      </div>
+      <div>
+        <label>Unité convertie</label>
+        <p id="result">0</p>
+        <select name="to-unit" id="to-unit">
+          <option value="m">Mètre</option>
+          <option value="ft">Pied</option>
+          <option value="C">Celsius</option>
+          <option value="F">Fahrenheit</option>
+          <option value="€">Euros</option>
+          <option value="$">Dollars</option>
+          <option value="£">Livres</option>
+        </select>
+      </div>
+      <input type="submit" value="Convertir" />
+    </form>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

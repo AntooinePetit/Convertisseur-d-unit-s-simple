@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+}
+
+body {
+  max-width: fit-content;
+  margin: 15px auto;
+}
+
+form {
+  max-width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 35px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  input[type="submit"] {
+    grid-column: 1 / 3;
+  }
+}
